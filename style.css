@@ -1,0 +1,121 @@
+header video {
+    margin: 0 10px;
+    width: auto;
+    height: auto;
+}
+
+header {
+    background-color: #ffdf9b;
+}
+
+.card {
+    width: 180px;
+    height: 200px;
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card__inner {
+    transform: rotateY(180deg);
+}
+
+.card__front, .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__front {
+    background-color: #457eee;
+}
+
+.card__back {
+    background-color: #ff9e18;
+    transform: rotateY(180deg);
+}
+
+/*3е задание*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: relative;
+    display: none;
+    top: 20px;
+    z-index: 2;
+}
+
+.menu {
+    text-transform: uppercase;
+    background-color: grey;
+    height: 600px;
+    max-height: 100%;
+    width: 20px;
+
+}
+
+.li__decor {
+    position: relative;
+    transform: rotateZ(45deg);
+    background-color: orangered;
+    display: inline-block;
+    padding: 2px;
+    margin: 4px;
+    border: solid 2px black;
+    top: 14px;
+}
+
+.li__decor {
+    margin-left:  20px;
+}
+
+.menu:hover {
+    width: 180px;
+    transition: width 0.2s ease;
+}
+
+.menu:hover nav {
+    display: inline-block;
+}
+
+.menu__here {
+    display: inline-block;
+    position: relative;
+    top: 30vh;
+    left: 36px;
+    white-space: nowrap;
+    float: right;
+    transform: rotateZ(90deg);
+    color: white;
+    z-index: 1;
+}
+.menu:hover .menu_aside {
+    display: none;
+}
+li:hover a{
+    color: #b7e63b;
+}
+.li__decor:hover a{
+    transform: translateZ(10px);
+}
+h2:hover{
+    transform: translate(20px);
+    transition: 0.3s;
+}
+h2{
+    padding-left: 35px;
+}
