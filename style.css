@@ -65,7 +65,6 @@ nav {
     height: 600px;
     max-height: 100%;
     width: 20px;
-
 }
 
 .li__decor {
@@ -76,11 +75,11 @@ nav {
     padding: 2px;
     margin: 4px;
     border: solid 2px black;
-    top: 14px;
+    top: 18px;
 }
 
 .li__decor {
-    margin-left:  20px;
+    margin-left: 20px;
 }
 
 .menu:hover {
@@ -99,23 +98,31 @@ nav {
     left: 36px;
     white-space: nowrap;
     float: right;
+    cursor: default;
     transform: rotateZ(90deg);
     color: white;
     z-index: 1;
 }
+
 .menu:hover .menu_aside {
-    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
-li:hover a{
-    color: #b7e63b;
+
+li:hover a {
+    color: #e68625;
+    transition: 0.1s;
 }
-.li__decor:hover a{
+
+.li__decor:hover a {
     transform: translateZ(10px);
 }
-h2:hover{
+
+h2:hover {
     transform: translate(20px);
     transition: 0.3s;
 }
-h2{
+
+h2 {
     padding-left: 35px;
 }
